@@ -82,31 +82,54 @@ class ReflexAgent(Agent):
         newScaredTimes = [
             ghostState.scaredTimer for ghostState in newGhostStates]
         "*** YOUR CODE HERE ***"
+        now_legal_actions = successorGameState.getLegalActions()
         newGhostPos = successorGameState.getGhostPositions()
         GhostNum = len(newGhostPos)
         FoodNum = len(newFood.asList())
-        min_dist_g = sys.maxsize
-        death = 0
-        ALR = 2
+        ret_score = successorGameState.getScore()
+        min_to_g =  sys.maxsize
+        ind = 0
         for i in range(GhostNum):
-            dist = the_dist(newGhostPos[i], newPos)
-            if dist < newScaredTimes[i] + ALR:
-                death = 1
-                break;
-            else:
-                if min_dist_g > dist:
-                    min_dist_g = dist
-        min_dist_f = sys.maxsize
+            to_g = the_dist(newPos, newGhostPos[i])
+            if to_g < min_to_g:
+                min_to_g = to_g
+                ind = i
+        min_to_f = sys.maxsize
         for i in range(FoodNum):
-            dist = the_dist(newPos, newFood.asList()[i])
-            if min_dist_f > dist:
-                min_dist_f = dist
-        if death == 1:
-            successorGameState.score = -sys.maxsize
-        else:
-            successorGameState.score =-( min_dist_g + min_dist_f)
-        return successorGameState.getScore()
-
+            to_f = the_dist(newPos, newFood.asList()[i])
+            food_pos = newFood.asList()[i]
+            offset = 50
+            times = 0
+            # to NORTH 
+            if food_pos[1] > newPos[1]:
+                if 'North' not in now_legal_actions:
+                    to_f += offset*times
+                    times += 1
+            # to SOUTH
+            if food_pos[1] < newPos[1]:
+                if 'South' not in now_legal_actions:
+                    to_f += offset*times
+                    times += 1
+            # to EAST
+            if food_pos[0] > newPos[0]:
+                if 'East' not in now_legal_actions:
+                    to_f += offset*times
+                    times += 1
+            # to WEST
+            if food_pos[0] < newPos[0]:
+                if 'West' not in now_legal_actions:
+                    to_f += offset*times
+                    times += 1
+            if to_f < min_to_f:
+                min_to_f = to_f
+        if action == 'Stop':
+            ret_score -= 30
+        ret_score += min_to_g / (min_to_f * 10 + 1)
+        if(FoodNum == 0):
+            ret_score = sys.maxsize
+        if min_to_g <= 1:
+            ret_score = -sys.maxsize
+        return ret_score
 
 def scoreEvaluationFunction(currentGameState: GameState):
     """
