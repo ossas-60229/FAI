@@ -69,14 +69,20 @@ def normalize(X: np.ndarray) -> np.ndarray:
     # Z-score
     ret = X.copy()
     size = len(std_arr)
+    ret = (ret - mean_arr) / std_arr
+    '''
     for flow in ret:
         for i in range(size):
             flow[i] = (flow[i] - mean_arr[i]) / std_arr[i]
+    '''
     max_arr = np.max(ret, axis=0)
     min_arr = np.min(ret, axis=0)
+    ret = (ret - min_arr) / (max_arr - min_arr)
+    '''
     for flow in ret:
         for i in range(size):
             flow[i] = (flow[i] - min_arr[i]) / (max_arr[i] - min_arr[i])
+    '''
     return ret
     raise NotImplementedError
 
@@ -116,7 +122,7 @@ class LinearModel:
         # You can try different learning rate and iterations
         self.model_type = model_type
         self.weights = None
-        self.bias = None
+        self.bias = 0
         self.n_features = None
         self.n_classes = None
 
@@ -127,17 +133,23 @@ class LinearModel:
 
     def fit(self, X: np.ndarray, y: np.ndarray) -> None:
         X = np.insert(X, 0, 1, axis=1)
+        # bias included
         self.n_classes = len(np.unique(y))
         self.n_features = X.shape[1]
-        self.weights = np.zeros((self.n_features, self.n_classes))
-        self.bias = np.zeros(self.n_classes)
         # print("n_features:", self.n_features)
         if self.model_type == "logistic":
+            self.weights = np.zeros((self.n_features, self.n_classes))
+            self.bias = np.zeros(self.n_classes)
             for i in range(self.iterations):
                 grad = self._compute_gradients(X, y)
                 self.weights -= self.learning_rate * grad
             return
         else:
+            self.weights = np.zeros(self.n_features)
+            for i in range(self.iterations):
+                grad = self._compute_gradients(X, y)
+                self.weights -= self.learning_rate * grad
+            return
             pass
         # TODO: 2%
         raise NotImplementedError
@@ -146,6 +158,8 @@ class LinearModel:
         X = np.insert(X, 0, 1, axis=1)
         if self.model_type == "linear":
             # TODO: 2%
+            ret = np.dot(X, self.weights)
+            return ret
             raise NotImplementedError
         elif self.model_type == "logistic":
             # TODO: 2%
@@ -165,6 +179,11 @@ class LinearModel:
     def _compute_gradients(self, X: np.ndarray, y: np.ndarray) -> np.ndarray:
         if self.model_type == "linear":
             # TODO: 3%
+            now_vals = np.dot(X, self.weights)
+            ret = np.zeros(X.shape[1])
+            for i in range(X.shape[1]):
+                ret[i] = np.sum((now_vals - y) * X[:, i]) * (1 / len(y))
+            return ret
             raise NotImplementedError
         elif self.model_type == "logistic":
             # TODO: 3%
@@ -196,6 +215,7 @@ class DecisionTree:
     def fit(self, X: np.ndarray, y: np.ndarray) -> None:
         self.n_features = X.shape[1]
         self.n_classes = len(np.unique(y))
+        #self.max_depth = min(self.max_depth, self.n_features)
         self.tree = self._build_tree(X, y, 0)
 
     def predict(self, X: np.ndarray) -> np.ndarray:
@@ -251,6 +271,7 @@ class DecisionTree:
             raise NotImplementedError
         else:
             # TODO: 1%
+            return np.mean(y)
             raise NotImplementedError
 
     def _find_best_split(self, X: np.ndarray, y: np.ndarray) -> tuple[int, float]:
@@ -307,7 +328,13 @@ class DecisionTree:
 
     def _mse(self, left_y: np.ndarray, right_y: np.ndarray) -> float:
         # TODO: 4%
-        return mean_squared_error(left_y, right_y)
+        mean = np.mean(left_y)
+        left_mean_arr = [mean for i in range(len(left_y))]
+        mean = np.mean(right_y)
+        right_mean_arr = [mean for i in range(len(right_y))]
+
+        return mean_squared_error(left_y, left_mean_arr) * len(left_y)/ (len(left_y) + len(right_y)) + mean_squared_error(right_y, right_mean_arr) * len(right_y) / (len(left_y) + len(right_y))
+
         raise NotImplementedError
 
     def _traverse_tree(self, x: np.ndarray, node: dict):
@@ -350,7 +377,8 @@ class RandomForest:
             chosen_num = np.random.randint(0, self.n_features)
             chosen_num += 1
             indices = [i for i in range(self.n_features)]
-            chosen = np.random.choice(indices, chosen_num, replace=True)
+            chosen = np.random.choice(indices, chosen_num, replace=False)
+            self.max_depth = min(self.max_depth, len(chosen))
             X_chosen = X[:, chosen]
             X_chosen = np.array(X_chosen)
             tree.which_features = chosen
@@ -360,16 +388,25 @@ class RandomForest:
 
     def predict(self, X: np.ndarray) -> np.ndarray:
         # TODO: 2%
-        votion = np.zeros((X.shape[0],self.n_classes))
-        for tree in self.trees:
-            result = tree.predict(X[:, tree.which_features])
-            for i in range(len(result)):
-                votion[i][result[i]] += 1
-        ret = np.zeros(X.shape[0])
-        for i in range(X.shape[0]):
-            ret[i] = np.argmax(votion[i])
-        print(ret)
-        return ret
+        if self.model_type == "classifier":
+            votion = np.zeros((X.shape[0], self.n_classes))
+            for tree in self.trees:
+                result = tree.predict(X[:, tree.which_features])
+                for i in range(len(result)):
+                    votion[i][result[i]] += 1
+            ret = np.zeros(X.shape[0])
+            for i in range(X.shape[0]):
+                ret[i] = np.argmax(votion[i])
+            #print(ret)
+            return ret
+        else:
+            fuck = np.zeros(X.shape[0])
+            for tree in self.trees:
+                result = tree.predict(X[:, tree.which_features])
+                fuck += result
+            ret = fuck / len(self.trees)
+            return ret
+            pass
         # raise NotImplementedError
 
 
@@ -387,9 +424,11 @@ def accuracy(y_true, y_pred):
 
 def mean_squared_error(y_true, y_pred):
     # TODO: 1%
-    mse = y_true - y_pred
-    mse = np.square(mse)
-    return np.mean(mse)
+    fuck = y_true - y_pred
+    ret = 0
+    for i in range(len(fuck)):
+        ret += fuck[i] ** 2
+    return ret / len(fuck)
     raise NotImplementedError
 
 
