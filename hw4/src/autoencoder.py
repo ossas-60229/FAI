@@ -55,15 +55,6 @@ class Autoencoder(nn.Module):
             total_loss = total_loss / (X.shape[0] / batch_size)
             loos_arr.append(total_loss)
         # plot the shit
-        #fig = plt.figure()
-        #print(len(loos_arr))
-        #fig.suptitle("MSE")
-        #xarr = list(range(len(loos_arr)))
-        #plt.plot(xarr,loos_arr, label="MSE")
-        #plt.xlabel("Epoch",fontsize=14)
-        #plt.ylabel("MSE",fontsize=14)
-        #plt.legend()
-        #plt.savefig("AutoEncoder_SGD.png")
         return
         raise NotImplementedError
     
@@ -128,14 +119,5 @@ class DenoisingAutoencoder(Autoencoder):
             total_loss = total_loss / (X.shape[0] / batch_size)
             loos_arr.append(total_loss)
         # plot the shit
-        #fig = plt.figure()
-        #print(len(loos_arr))
-        #fig.suptitle("MSE")
-        #xarr = list(range(len(loos_arr)))
-        #plt.plot(xarr,loos_arr, label="MSE")
-        #plt.xlabel("Epoch",fontsize=14)
-        #plt.ylabel("MSE",fontsize=14)
-        #plt.legend()
-        #plt.savefig("DenoiseAutoEncoder_SGD.png")
         return
         raise NotImplementedError

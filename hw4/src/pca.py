@@ -17,12 +17,9 @@ class PCA:
         # calculate the eigen vector
         cov = np.cov(tmpX,rowvar=False)
         eig_val,eig_vecs = np.linalg.eigh(cov)
-        #eig_val = np.abs(eig_val)
-        #eig_vecs = np.real(eig_vecs)
         # sort the eigen vector
         idx_arr = np.argsort(eig_val)
         eig_vecs = eig_vecs[:,idx_arr]
-        #print(top_n_eigvec.shape)
         self.components = eig_vecs
         # reduce the dimensions
 
