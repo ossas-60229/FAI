@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 
 #TODO: change to your data path
 DATA_PATH = './data'
+#in windows
+#DATA_PATH = '.\data'
 # set random seed
 np.random.seed(0)
 """
@@ -24,6 +26,7 @@ def read_image():
     DO NOT MODIFY THIS FUNCTION.
     """
     file_path = './data/subject_05_17.png'  #TODO: change to your path
+    #file_path = '.\data\subject_05_17.png'  #in windows
     img = Image.open(file_path).convert("L")
     img_array = np.array(img)
     img_vector = img_array.flatten()
@@ -81,6 +84,25 @@ def main():
     pca = PCA(n_components=40)
     print("PCA Training Start...")
     pca.fit(X_train)
+    # display params
+    #print("start to display params")
+    #print("mean:")
+    #tmp_mean = pca.mean * 255
+    #col = 61
+    #row = 80
+    #fuck = np.zeros((col,row))
+    #for i in range(len(tmp_mean)):
+        #fuck[i//row,i%row] = tmp_mean[i]
+    #img_tmp = Image.fromarray(fuck.astype(np.uint8))
+    #img_tmp.save("mean.png")
+    #for i in range(min(4,pca.n_components)):
+        #print("component " + str(i))
+        #tmpfuck = pca.components[i] * 255
+        #fuck = np.zeros((col,row))
+        #for j in range(len(tmpfuck)):
+            #fuck[j//row,j%row] = tmpfuck[j]
+        #img_tmp = Image.fromarray(fuck.astype(np.uint8))
+        #img_tmp.save("component_" + str(i) + ".png")
 
     # Autoencoder
     autoencoder = Autoencoder(input_dim=4880, encoding_dim=488)
@@ -127,9 +149,33 @@ def main():
 
     # Reconstruct Image: subject05_17.png
     img_vec = read_image()
+    #tmp_mean = img_vec*255
+    #fuck = np.zeros((col,row))
+    #for i in range(len(tmp_mean)):
+        #fuck[i//row,i%row] = tmp_mean[i]
+    #img_tmp = Image.fromarray(fuck.astype(np.uint8))
+    #img_tmp.save("original.png")
     img_reconstruct_pca = pca.reconstruct(img_vec)
+    #tmp_mean = img_reconstruct_pca*255
+    #fuck = np.zeros((col,row))
+    #for i in range(len(tmp_mean)):
+        #fuck[i//row,i%row] = tmp_mean[i]
+    #img_tmp = Image.fromarray(fuck.astype(np.uint8))
+    #img_tmp.save("pca_reconstruct.png")
     img_reconstruct_ae = autoencoder.reconstruct(torch.tensor(img_vec, dtype=torch.float32))
+    #tmp_mean = img_reconstruct_ae*255
+    #fuck = np.zeros((col,row))
+    #for i in range(len(tmp_mean)):
+        #fuck[i//row,i%row] = tmp_mean[i]
+    #img_tmp = Image.fromarray(fuck.astype(np.uint8))
+    #img_tmp.save("ae_reconstruct.png")
     img_reconstruct_deno_ae = deno_autoencoder.reconstruct(torch.tensor(img_vec, dtype=torch.float32))
+    #tmp_mean = img_reconstruct_deno_ae*255
+    #fuck = np.zeros((col,row))
+    #for i in range(len(tmp_mean)):
+        #fuck[i//row,i%row] = tmp_mean[i]
+    #img_tmp = Image.fromarray(fuck.astype(np.uint8))
+    #img_tmp.save("deno_reconstruct.png")
 
     reconstruction_loss_pca = reconstruction_loss(img_vec, img_reconstruct_pca)
     reconstruction_loss_ae = reconstruction_loss(img_vec, img_reconstruct_ae)
