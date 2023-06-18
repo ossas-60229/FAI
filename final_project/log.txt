@@ -1,0 +1,783 @@
+Started the round 1
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[ 1., -1.]])
+model is  tensor([[ 0.0538, -0.1573, -0.2341]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['CQ', 'H5', 'CT'])
+encoded
+
+
+forward start tensor([[ 1., -1.]])
+model is  tensor([[ 0.0538, -0.1573, -0.2341]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['CQ', 'H5', 'CT', 'D5'])
+encoded
+
+
+forward start tensor([[ 1., -1.]])
+model is  tensor([[ 0.0538, -0.1573, -0.2341]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['CQ', 'H5', 'CT', 'D5', 'C8'])
+encoded
+
+
+forward start tensor([[ 1., -1.]])
+model is  tensor([[ 0.0538, -0.1573, -0.2341]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p2']" won the round 1 (stack = {'p1': 990, 'p2': 1010})
+Started the round 2
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[ 0., -7.]])
+model is  tensor([[-4.6679,  2.9530, -0.1185]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['HA', 'H8', 'C7'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -7.]])
+model is  tensor([[-4.6679,  2.9530, -0.1185]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['HA', 'H8', 'C7', 'D3'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -7.]])
+model is  tensor([[-4.6679,  2.9530, -0.1185]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['HA', 'H8', 'C7', 'D3', 'C3'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -7.]])
+model is  tensor([[-4.6679,  2.9530, -0.1185]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p2']" won the round 2 (stack = {'p1': 980, 'p2': 1020})
+Started the round 3
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[ 0., -6.]])
+model is  tensor([[-3.9974,  2.5046, -0.0339]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['DK', 'CQ', 'S6'])
+encoded
+
+
+forward start tensor([[ 0., -6.]])
+model is  tensor([[-3.9974,  2.5046, -0.0339]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['DK', 'CQ', 'S6', 'CA'])
+encoded
+
+
+forward start tensor([[ 0., -6.]])
+model is  tensor([[-3.9974,  2.5046, -0.0339]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['DK', 'CQ', 'S6', 'CA', 'H3'])
+encoded
+
+
+forward start tensor([[ 0., -6.]])
+model is  tensor([[-3.9974,  2.5046, -0.0339]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p2']" won the round 3 (stack = {'p1': 970, 'p2': 1030})
+Started the round 4
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[ 0., -8.]])
+model is  tensor([[-5.3384,  3.4014, -0.2030]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['C2', 'C4', 'SK'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -8.]])
+model is  tensor([[-5.3384,  3.4014, -0.2030]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['C2', 'C4', 'SK', 'D7'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -8.]])
+model is  tensor([[-5.3384,  3.4014, -0.2030]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['C2', 'C4', 'SK', 'D7', 'C5'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -8.]])
+model is  tensor([[-5.3384,  3.4014, -0.2030]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p1']" won the round 4 (stack = {'p1': 980, 'p2': 1020})
+Started the round 5
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[  0., -12.]])
+model is  tensor([[-8.0204,  5.1952, -0.5412]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['C8', 'HA', 'S9'])
+encoded
+
+
+forward start tensor([[  0., -12.]])
+model is  tensor([[-8.0204,  5.1952, -0.5412]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['C8', 'HA', 'S9', 'DQ'])
+encoded
+
+
+forward start tensor([[  0., -12.]])
+model is  tensor([[-8.0204,  5.1952, -0.5412]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['C8', 'HA', 'S9', 'DQ', 'C6'])
+encoded
+
+
+forward start tensor([[  0., -12.]])
+model is  tensor([[-8.0204,  5.1952, -0.5412]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p2']" won the round 5 (stack = {'p1': 970, 'p2': 1030})
+Started the round 6
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[ 0., 10.]])
+model is  tensor([[ 6.7308, -4.6704,  1.3189]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['D3', 'DA', 'H5'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., 10.]])
+model is  tensor([[ 6.7308, -4.6704,  1.3189]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['D3', 'DA', 'H5', 'D5'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., 10.]])
+model is  tensor([[ 6.7308, -4.6704,  1.3189]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['D3', 'DA', 'H5', 'D5', 'SK'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., 10.]])
+model is  tensor([[ 6.7308, -4.6704,  1.3189]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p2']" won the round 6 (stack = {'p1': 960, 'p2': 1040})
+Started the round 7
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[ 1., -6.]])
+model is  tensor([[-3.2987,  2.0848, -0.6568]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['S3', 'S6', 'D9'])
+encoded
+
+
+forward start tensor([[ 1., -6.]])
+model is  tensor([[-3.2987,  2.0848, -0.6568]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['S3', 'S6', 'D9', 'C2'])
+encoded
+
+
+forward start tensor([[ 1., -6.]])
+model is  tensor([[-3.2987,  2.0848, -0.6568]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['S3', 'S6', 'D9', 'C2', 'H5'])
+encoded
+
+
+forward start tensor([[ 1., -6.]])
+model is  tensor([[-3.2987,  2.0848, -0.6568]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p1']" won the round 7 (stack = {'p1': 970, 'p2': 1030})
+Started the round 8
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['H7', 'DA', 'H4'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['H7', 'DA', 'H4', 'H3'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['H7', 'DA', 'H4', 'H3', 'S4'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p1', 'p2']" won the round 8 (stack = {'p1': 970, 'p2': 1030})
+Started the round 9
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[ 0., 11.]])
+model is  tensor([[ 7.4013, -5.1188,  1.4035]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['C5', 'C8', 'CK'])
+encoded
+
+
+forward start tensor([[ 0., 11.]])
+model is  tensor([[ 7.4013, -5.1188,  1.4035]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['C5', 'C8', 'CK', 'D6'])
+encoded
+
+
+forward start tensor([[ 0., 11.]])
+model is  tensor([[ 7.4013, -5.1188,  1.4035]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['C5', 'C8', 'CK', 'D6', 'C4'])
+encoded
+
+
+forward start tensor([[ 0., 11.]])
+model is  tensor([[ 7.4013, -5.1188,  1.4035]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p1']" won the round 9 (stack = {'p1': 980, 'p2': 1020})
+Started the round 10
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[0., 9.]])
+model is  tensor([[ 6.0603, -4.2219,  1.2344]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['C6', 'S5', 'C3'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[0., 9.]])
+model is  tensor([[ 6.0603, -4.2219,  1.2344]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['C6', 'S5', 'C3', 'S6'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[0., 9.]])
+model is  tensor([[ 6.0603, -4.2219,  1.2344]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['C6', 'S5', 'C3', 'S6', 'H5'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[0., 9.]])
+model is  tensor([[ 6.0603, -4.2219,  1.2344]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p2']" won the round 10 (stack = {'p1': 970, 'p2': 1030})
+Started the round 11
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[0., 0.]])
+model is  tensor([[ 0.0257, -0.1860,  0.4734]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['D6', 'HK', 'C4'])
+encoded
+
+
+forward start tensor([[0., 0.]])
+model is  tensor([[ 0.0257, -0.1860,  0.4734]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['D6', 'HK', 'C4', 'S8'])
+encoded
+
+
+forward start tensor([[0., 0.]])
+model is  tensor([[ 0.0257, -0.1860,  0.4734]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['D6', 'HK', 'C4', 'S8', 'S7'])
+encoded
+
+
+forward start tensor([[0., 0.]])
+model is  tensor([[ 0.0257, -0.1860,  0.4734]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p2']" won the round 11 (stack = {'p1': 960, 'p2': 1040})
+Started the round 12
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[ 0., 12.]])
+model is  tensor([[ 8.0718, -5.5673,  1.4881]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['S3', 'CJ', 'H4'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., 12.]])
+model is  tensor([[ 8.0718, -5.5673,  1.4881]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['S3', 'CJ', 'H4', 'H9'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., 12.]])
+model is  tensor([[ 8.0718, -5.5673,  1.4881]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['S3', 'CJ', 'H4', 'H9', 'SA'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., 12.]])
+model is  tensor([[ 8.0718, -5.5673,  1.4881]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p2']" won the round 12 (stack = {'p1': 950, 'p2': 1050})
+Started the round 13
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[0., 5.]])
+model is  tensor([[ 3.3782, -2.4282,  0.8962]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['CQ', 'D5', 'C4'])
+encoded
+
+
+forward start tensor([[0., 5.]])
+model is  tensor([[ 3.3782, -2.4282,  0.8962]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['CQ', 'D5', 'C4', 'DQ'])
+encoded
+
+
+forward start tensor([[0., 5.]])
+model is  tensor([[ 3.3782, -2.4282,  0.8962]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['CQ', 'D5', 'C4', 'DQ', 'S7'])
+encoded
+
+
+forward start tensor([[0., 5.]])
+model is  tensor([[ 3.3782, -2.4282,  0.8962]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p1']" won the round 13 (stack = {'p1': 960, 'p2': 1040})
+Started the round 14
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['D4', 'DA', 'H8'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['D4', 'DA', 'H8', 'D2'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['D4', 'DA', 'H8', 'D2', 'C9'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -9.]])
+model is  tensor([[-6.0089,  3.8499, -0.2876]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p1']" won the round 14 (stack = {'p1': 970, 'p2': 1030})
+Started the round 15
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['H8', 'D5', 'C2'])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['H8', 'D5', 'C2', 'D2'])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['H8', 'D5', 'C2', 'D2', 'S2'])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p1']" won the round 15 (stack = {'p1': 980, 'p2': 1020})
+Started the round 16
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[1., 2.]])
+model is  tensor([[ 2.0653, -1.5026,  0.0196]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['DK', 'D7', 'SJ'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[1., 2.]])
+model is  tensor([[ 2.0653, -1.5026,  0.0196]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['DK', 'D7', 'SJ', 'S5'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[1., 2.]])
+model is  tensor([[ 2.0653, -1.5026,  0.0196]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['DK', 'D7', 'SJ', 'S5', 'S9'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[1., 2.]])
+model is  tensor([[ 2.0653, -1.5026,  0.0196]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p1']" won the round 16 (stack = {'p1': 990, 'p2': 1010})
+Started the round 17
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['CJ', 'H8', 'DJ'])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['CJ', 'H8', 'DJ', 'H9'])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['CJ', 'H8', 'DJ', 'H9', 'H3'])
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p1']" won the round 17 (stack = {'p1': 1000, 'p2': 1000})
+Started the round 18
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[ 0., -2.]])
+model is  tensor([[-1.3153,  0.7108,  0.3043]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['CA', 'S7', 'CK'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -2.]])
+model is  tensor([[-1.3153,  0.7108,  0.3043]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['CA', 'S7', 'CK', 'ST'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -2.]])
+model is  tensor([[-1.3153,  0.7108,  0.3043]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['CA', 'S7', 'CK', 'ST', 'H6'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[ 0., -2.]])
+model is  tensor([[-1.3153,  0.7108,  0.3043]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p1']" won the round 18 (stack = {'p1': 1010, 'p2': 990})
+Started the round 19
+Street "preflop" started. (community card = [])
+encoded
+
+
+forward start tensor([[0., 4.]])
+model is  tensor([[ 2.7077, -1.9798,  0.8116]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['D8', 'DK', 'S2'])
+encoded
+
+
+forward start tensor([[0., 4.]])
+model is  tensor([[ 2.7077, -1.9798,  0.8116]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "turn" started. (community card = ['D8', 'DK', 'S2', 'CK'])
+encoded
+
+
+forward start tensor([[0., 4.]])
+model is  tensor([[ 2.7077, -1.9798,  0.8116]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+Street "river" started. (community card = ['D8', 'DK', 'S2', 'CK', 'HA'])
+encoded
+
+
+forward start tensor([[0., 4.]])
+model is  tensor([[ 2.7077, -1.9798,  0.8116]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"p1" declared "call:0"
+"['p2']" won the round 19 (stack = {'p1': 1000, 'p2': 1000})
+Started the round 20
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:10"
+Street "flop" started. (community card = ['SA', 'CQ', 'HA'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "turn" started. (community card = ['SA', 'CQ', 'HA', 'CK'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+Street "river" started. (community card = ['SA', 'CQ', 'HA', 'CK', 'C4'])
+"p1" declared "call:0"
+encoded
+
+
+forward start tensor([[0., 1.]])
+model is  tensor([[ 0.6962, -0.6345,  0.5580]], grad_fn=<AddmmBackward0>)
+forward end
+"p2" declared "call:0"
+"['p2']" won the round 20 (stack = {'p1': 990, 'p2': 1010})
+{
+    "rule": {
+        "initial_stack": 1000,
+        "max_round": 20,
+        "small_blind_amount": 5,
+        "ante": 0,
+        "blind_structure": {}
+    },
+    "players": [
+        {
+            "name": "p1",
+            "uuid": "ddjvrwxhcckphjbeaegbxn",
+            "stack": 990,
+            "state": "participating"
+        },
+        {
+            "name": "p2",
+            "uuid": "xinurewyurprvapzqqjfyq",
+            "stack": 1010,
+            "state": "participating"
+        }
+    ]
+}
