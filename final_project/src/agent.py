@@ -144,8 +144,8 @@ class MyPlayer(BasePokerPlayer):
         action = self.ACTION_MAP_INT[action]
         # print("fuck action strat\n\n", action, "\n\n")
         if action == "raise":
-            constant = min(act_list[2] * 10 - 1, 8)
-            amount = (valid_actions[2]["amount"]["min"] + 10) * (
+            constant = min(act_list[2] * 10 - 1, 5)
+            amount = (valid_actions[2]["amount"]["min"]) * (
                 1 + win_r
             ) * constant + 1
             amount = min(amount, valid_actions[2]["amount"]["max"])
@@ -154,6 +154,8 @@ class MyPlayer(BasePokerPlayer):
                 and self.stack > 1000
             ):
                 amount = max(amount * 0.5, valid_actions[2]["amount"]["min"] * 2 + 1)
+            if amount > self.stack*0.8:
+                amount = max(self.stack*0.8, valid_actions[2]["amount"]["min"])
             if self.pos + 1 == self.n_player:
                 amount = info["amount"]
                 action = "call"
