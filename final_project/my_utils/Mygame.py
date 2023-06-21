@@ -6,17 +6,21 @@ import numpy as np
 class Game:
     def __init__(self) -> None:
         pass
-    RAISE = "0"
+    FOLD = "0"
     CALL = "1"
-    FOLD = "2"
+    RAISE = "2"
     SMALL_BLIND = "3"
     BIG_BLIND = "4"
     DECK = gen_deck()
-    def deal_cards():
-        sample = random.sample(Game.DECK.deck, 4)
+    def deal_cards(num_cards=9):
+        if num_cards < 4:
+            print("Not enough cards")
+            return None
+        sample = random.sample(Game.DECK.deck, num_cards)
         player_one_cards = sample[0:2]
         player_two_cards = sample[2:4]
-        return player_one_cards, player_two_cards
+        community_cards = sample[4:num_cards]
+        return player_one_cards, player_two_cards, community_cards
 
     @staticmethod
     def get_higher_rank(card1, card2):

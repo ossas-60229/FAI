@@ -1,102 +1,756 @@
-holcards ['H3', 'DQ']
-3
 Started the round 1
 Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['HQ', 'H8', 'C9'])
+win rate
+
+ 0.17424242424242425 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
 "p2" declared "fold:0"
-"['p1']" won the round 1 (stack = {'p1': 1005, 'p2': 995})
-holcards ['C4', 'D7']
-4
+"['p1']" won the round 1 (stack = {'p1': 1010, 'p2': 990})
 Started the round 2
 Street "preflop" started. (community card = [])
 "p1" declared "call:10"
-"p2" declared "raise:685"
-"p1" declared "call:685"
-Street "flop" started. (community card = ['DK', 'S8', 'SK'])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['H8', 'C2', 'C7'])
 "p1" declared "call:0"
-"p2" declared "raise:117"
-"p1" declared "call:117"
-Street "turn" started. (community card = ['DK', 'S8', 'SK', 'S3'])
-"p1" declared "call:0"
-"p2" declared "raise:131"
-"p1" declared "call:131"
-Street "river" started. (community card = ['DK', 'S8', 'SK', 'S3', 'S6'])
-"p1" declared "call:0"
-"p2" declared "raise:41"
-"p1" declared "call:41"
-"['p1']" won the round 2 (stack = {'p1': 1979, 'p2': 21})
-holcards ['S4', 'C2']
-4
+win rate
+
+ 0.10909090909090909 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
+"p2" declared "fold:0"
+"['p1']" won the round 2 (stack = {'p1': 1020, 'p2': 980})
 Started the round 3
 Street "preflop" started. (community card = [])
-"p2" declared "raise:20"
-"p1" declared "call:20"
-Street "flop" started. (community card = ['SJ', 'CJ', 'HJ'])
-"p2" declared "raise:-1"
-"['p1']" won the round 3 (stack = {'p1': 1999, 'p2': 1})
-holcards ['C9', 'DJ']
-9
-Started the round 1
-Street "preflop" started. (community card = [])
-"p2" declared "fold:0"
-"['p1']" won the round 1 (stack = {'p1': 1005, 'p2': 995})
-holcards ['SJ', 'H3']
-11
-Started the round 2
-Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
 "p1" declared "call:10"
+Street "flop" started. (community card = ['D4', 'H5', 'C5'])
+win rate
+
+ 0.898989898989899 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    95.94949494949495 
+
+
+"p2" declared "raise:95.94949494949495"
+"p1" declared "raise:252.5"
+win rate
+
+ 0.30808080808080807 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
 "p2" declared "fold:0"
-"['p1']" won the round 2 (stack = {'p1': 1015, 'p2': 985})
-holcards ['D7', 'CJ']
-7
-Started the round 3
-Street "preflop" started. (community card = [])
-"p2" declared "raise:263"
-"p1" declared "call:263"
-Street "flop" started. (community card = ['S6', 'H9', 'C8'])
-"p2" declared "raise:266"
-"p1" declared "call:266"
-Street "turn" started. (community card = ['S6', 'H9', 'C8', 'D2'])
-"p2" declared "fold:0"
-"['p1']" won the round 3 (stack = {'p1': 1544, 'p2': 456})
-holcards ['S2', 'C9']
-2
+"['p1']" won the round 3 (stack = {'p1': 1125.5, 'p2': 874.0505050505051})
 Started the round 4
 Street "preflop" started. (community card = [])
 "p1" declared "call:10"
-"p2" declared "raise:177"
-"p1" declared "call:177"
-Street "flop" started. (community card = ['S6', 'H8', 'HK'])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['D4', 'H5', 'S4'])
 "p1" declared "call:0"
-"p2" declared "raise:99"
-"p1" declared "call:99"
-Street "turn" started. (community card = ['S6', 'H8', 'HK', 'HJ'])
+win rate
+
+ 0.5176767676767676 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    76.8838383838384 
+
+
+"p2" declared "raise:76.8838383838384"
+"p1" declared "call:76.8838383838384"
+Street "turn" started. (community card = ['D4', 'H5', 'S4', 'CT'])
 "p1" declared "call:0"
-"p2" declared "raise:149"
-"p1" declared "call:149"
-Street "river" started. (community card = ['S6', 'H8', 'HK', 'HJ', 'H4'])
-"p1" declared "call:0"
-"p2" declared "fold:0"
-"['p1']" won the round 4 (stack = {'p1': 1969, 'p2': 31})
-holcards ['H2', 'CQ']
-2
+win rate
+
+ 0.49343434343434345 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    75.67171717171716 
+
+
+"p2" declared "raise:75.67171717171716"
+"p1" declared "call:75.67171717171716"
+Street "river" started. (community card = ['D4', 'H5', 'S4', 'CT', 'HA'])
+"p1" declared "fold:0"
+"['p2']" won the round 4 (stack = {'p1': 962.9444444444445, 'p2': 1036.4949494949497})
 Started the round 5
 Street "preflop" started. (community card = [])
-"p2" declared "fold:0"
-"['p1']" won the round 5 (stack = {'p1': 1974, 'p2': 26})
-holcards ['D3', 'HT']
-3
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['HJ', 'DT', 'H6'])
+win rate
+
+ 0.6616161616161617 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    84.0808080808081 
+
+
+"p2" declared "raise:84.0808080808081"
+"p1" declared "call:84.0808080808081"
+Street "turn" started. (community card = ['HJ', 'DT', 'H6', 'DK'])
+win rate
+
+ 0.5136363636363637 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    76.68181818181819 
+
+
+"p2" declared "raise:76.68181818181819"
+"p1" declared "call:76.68181818181819"
+Street "river" started. (community card = ['HJ', 'DT', 'H6', 'DK', 'H2'])
+win rate
+
+ 0.6919191919191919 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    85.5959595959596 
+
+
+"p2" declared "raise:85.5959595959596"
+"p1" declared "fold:0"
+"['p2']" won the round 5 (stack = {'p1': 792.1818181818182, 'p2': 1207.1363636363637})
 Started the round 6
 Street "preflop" started. (community card = [])
 "p1" declared "call:10"
-"p2" declared "raise:17"
-"p1" declared "call:17"
-Street "flop" started. (community card = ['C6', 'D8', 'D9'])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['C8', 'DA', 'H6'])
 "p1" declared "call:0"
-"p2" declared "raise:-1"
-"['p1']" won the round 6 (stack = {'p1': 1991, 'p2': 9})
-holcards ['H3', 'H8']
-3
+win rate
+
+ 0.5015151515151515 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
+"p2" declared "fold:0"
+"['p1']" won the round 6 (stack = {'p1': 802.1818181818182, 'p2': 1197.1363636363637})
 Started the round 7
 Street "preflop" started. (community card = [])
-"p2" declared "raise:-1"
-"['p1']" won the round 7 (stack = {'p1': 1996, 'p2': 4})
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['D2', 'S7', 'HT'])
+win rate
+
+ 0.2111111111111111 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
+"p2" declared "fold:0"
+"['p1']" won the round 7 (stack = {'p1': 812.1818181818182, 'p2': 1187.1363636363637})
+Started the round 8
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['CT', 'DT', 'SA'])
+"p1" declared "raise:201.79545454545456"
+win rate
+
+ 0.4207070707070707 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
+"p2" declared "fold:0"
+"['p1']" won the round 8 (stack = {'p1': 821.3863636363637, 'p2': 1177.1363636363637})
+Started the round 9
+Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['H4', 'H2', 'SQ'])
+win rate
+
+ 0.10869565217391304 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
+"p2" declared "fold:0"
+"['p1']" won the round 9 (stack = {'p1': 831.3863636363637, 'p2': 1167.1363636363637})
+Started the round 10
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['SA', 'H4', 'DA'])
+"p1" declared "fold:0"
+"['p2']" won the round 10 (stack = {'p1': 821.3863636363637, 'p2': 1177.1363636363637})
+Started the round 11
+Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['D5', 'S9', 'S6'])
+win rate
+
+ 0.9242424242424242 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    97.21212121212122 
+
+
+"p2" declared "raise:97.21212121212122"
+"p1" declared "call:97.21212121212122"
+Street "turn" started. (community card = ['D5', 'S9', 'S6', 'D4'])
+win rate
+
+ 0.9282828282828283 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    97.41414141414143 
+
+
+"p2" declared "raise:97.41414141414143"
+"p1" declared "call:97.41414141414143"
+Street "river" started. (community card = ['D5', 'S9', 'S6', 'D4', 'S8'])
+win rate
+
+ 0.9368686868686869 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    97.84343434343434 
+
+
+"p2" declared "raise:97.84343434343434"
+"p1" declared "fold:0"
+"['p2']" won the round 11 (stack = {'p1': 616.760101010101, 'p2': 1381.6666666666667})
+Started the round 12
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['SQ', 'S4', 'D9'])
+"p1" declared "call:0"
+win rate
+
+ 0.509090909090909 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
+"p2" declared "fold:0"
+"['p1']" won the round 12 (stack = {'p1': 626.760101010101, 'p2': 1371.6666666666667})
+Started the round 13
+Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['D5', 'DT', 'DJ'])
+win rate
+
+ 0.8267676767676768 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    92.33838383838383 
+
+
+"p2" declared "raise:92.33838383838383"
+"p1" declared "call:92.33838383838383"
+Street "turn" started. (community card = ['D5', 'DT', 'DJ', 'D7'])
+win rate
+
+ 0.5484848484848485 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    78.42424242424242 
+
+
+"p2" declared "raise:78.42424242424242"
+"p1" declared "call:78.42424242424242"
+Street "river" started. (community card = ['D5', 'DT', 'DJ', 'D7', 'H5'])
+win rate
+
+ 0.5484848484848485 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    78.42424242424242 
+
+
+"p2" declared "raise:78.42424242424242"
+"p1" declared "call:78.42424242424242"
+"['p1']" won the round 13 (stack = {'p1': 885.5732323232323, 'p2': 1112.479797979798})
+Started the round 14
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['S8', 'H4', 'HK'])
+"p1" declared "call:0"
+win rate
+
+ 0.004545454545454545 
+
+
+fuck action strat
+
+ fold 
+
+
+fuck action
+
+ fold    0 
+
+
+"p2" declared "fold:0"
+"['p1']" won the round 14 (stack = {'p1': 895.5732323232323, 'p2': 1102.479797979798})
+Started the round 15
+Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['SJ', 'D8', 'DK'])
+win rate
+
+ 0.998989898989899 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    100.94949494949495 
+
+
+"p2" declared "raise:100.94949494949495"
+"p1" declared "call:100.94949494949495"
+Street "turn" started. (community card = ['SJ', 'D8', 'DK', 'S2'])
+win rate
+
+ 0.6636363636363637 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    84.18181818181819 
+
+
+"p2" declared "raise:84.18181818181819"
+"p1" declared "call:84.18181818181819"
+Street "river" started. (community card = ['SJ', 'D8', 'DK', 'S2', 'DT'])
+win rate
+
+ 0.6373737373737374 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    82.86868686868686 
+
+
+"p2" declared "raise:82.86868686868686"
+"p1" declared "call:82.86868686868686"
+"['p2']" won the round 15 (stack = {'p1': 617.5732323232323, 'p2': 1380.479797979798})
+Started the round 16
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['C2', 'C7', 'S4'])
+"p1" declared "call:0"
+win rate
+
+ 0.6373737373737374 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    82.86868686868686 
+
+
+"p2" declared "raise:82.86868686868686"
+"p1" declared "call:82.86868686868686"
+Street "turn" started. (community card = ['C2', 'C7', 'S4', 'CK'])
+"p1" declared "call:0"
+win rate
+
+ 0.9222222222222223 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    97.11111111111111 
+
+
+"p2" declared "raise:97.11111111111111"
+"p1" declared "call:97.11111111111111"
+Street "river" started. (community card = ['C2', 'C7', 'S4', 'CK', 'S8'])
+"p1" declared "raise:153.14330808080808"
+win rate
+
+ 0.803030303030303 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    1190.5 
+
+
+"p2" declared "raise:1190.5"
+"p1" declared "raise:-1"
+"['p2']" won the round 16 (stack = {'p1': 274.4501262626263, 'p2': 1723.0})
+Started the round 17
+Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['D6', 'S7', 'HQ'])
+win rate
+
+ 0.5494949494949495 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    78.47474747474747 
+
+
+"p2" declared "raise:78.47474747474747"
+"p1" declared "fold:0"
+"['p2']" won the round 17 (stack = {'p1': 264.4501262626263, 'p2': 1732.5252525252524})
+Started the round 18
+Street "preflop" started. (community card = [])
+"p1" declared "call:10"
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+Street "flop" started. (community card = ['C8', 'S3', 'H5'])
+"p1" declared "call:0"
+win rate
+
+ 0.9671717171717171 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    99.35858585858585 
+
+
+"p2" declared "raise:99.35858585858585"
+"p1" declared "call:99.35858585858585"
+Street "turn" started. (community card = ['C8', 'S3', 'H5', 'HT'])
+"p1" declared "fold:0"
+"['p2']" won the round 18 (stack = {'p1': 155.09154040404047, 'p2': 1841.1666666666665})
+Started the round 19
+Street "preflop" started. (community card = [])
+fuck action
+
+ call    10 
+
+
+"p2" declared "call:10"
+"p1" declared "call:10"
+Street "flop" started. (community card = ['H9', 'H7', 'S5'])
+win rate
+
+ 0.6535353535353535 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    83.67676767676768 
+
+
+"p2" declared "raise:83.67676767676768"
+"p1" declared "call:83.67676767676768"
+Street "turn" started. (community card = ['H9', 'H7', 'S5', 'C3'])
+win rate
+
+ 0.9202020202020202 
+
+
+fuck action strat
+
+ raise 
+
+
+fuck action
+
+ raise    97.01010101010101 
+
+
+"p2" declared "raise:97.01010101010101"
+"p1" declared "call:97.01010101010101"
+Street "river" started. (community card = ['H9', 'H7', 'S5', 'C3', 'H4'])
+"['p2']" won the round 19 (stack = {'p1': 0.0, 'p2': 1995.479797979798})
