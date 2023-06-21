@@ -148,6 +148,8 @@ class MyPlayer(BasePokerPlayer):
                 valid_actions[2]["amount"]["min"] * (1 + win_r)*constant + 1
             )
             amount = min(amount, valid_actions[2]["amount"]["max"])
+            if self.stack - amount <= 100:
+                amount = max(self.stack - 100, valid_actions[2]["amount"]["min"])
         elif action == "call":
             amount = info["amount"]
         elif action == "fold":
@@ -186,6 +188,7 @@ class MyPlayer(BasePokerPlayer):
             if seats[i]["uuid"] == self.uuid:
                 self.pos = i
                 self.name = seats[i]["name"]
+                self.stack = seats[i]["stack"]
         sb_p = round_state["small_blind_pos"]
         if self.pos >= sb_p:
             self.pos -= sb_p

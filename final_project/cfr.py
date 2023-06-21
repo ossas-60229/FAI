@@ -6,7 +6,6 @@ from my_utils.hand_evaluator import HandEvaluator
 from my_utils.Mygame import Game
 import numpy as np
 import os
-from agents import my_player
 
 
 class CFR:
@@ -63,7 +62,7 @@ class CFR:
         self.small_blind = sb
         self.big_blind = sb * 2
         util = 0
-        self.street = 2
+        self.street = 1
         interval = 100
         step = 0
         for i in range(iterations):
