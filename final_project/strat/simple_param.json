@@ -1,9 +1,0 @@
-{
-  "digit": 100,
-  "keys": [
-    "turn",
-    "win_rate",
-    "position",
-    "raise_ratio"
-  ]
-}

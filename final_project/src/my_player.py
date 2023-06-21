@@ -18,7 +18,7 @@ class MyPlayer(BasePokerPlayer):
         self.totalcost = 0
         self.sig_digits = 100
         self.pos = 0
-        self.path = "./strat/train0_strat.json"
+        self.path = "./src/train0_strat.json"
         self.strategy = None
         with open(self.path, "r") as f:
             self.strategy = json.load(f)
@@ -76,11 +76,11 @@ class MyPlayer(BasePokerPlayer):
         action = "call"
         info = valid_actions[1]
         amount = info["amount"]
-        print("fuck win rate\n\n", win_r, "\n\n")
+        #print("fuck win rate\n\n", win_r, "\n\n")
         [fold_exp, call_exp, raise_exp] = self.eval_action(
             valid_actions, win_r, self.round_state
         )
-        print("fuck exp\n\n", fold_exp, call_exp, raise_exp, "\n\n")
+        #print("fuck exp\n\n", fold_exp, call_exp, raise_exp, "\n\n")
         if call_exp > 0:
             opt = (self.pos + 1) / self.n_player
             if raise_exp > call_exp and opt < 0.6:
@@ -124,7 +124,7 @@ class MyPlayer(BasePokerPlayer):
     def strategy_decider(self, valid_actions, hole_cards, round_state):
         community_cards = round_state["community_card"]
         win_r = self.win_rate(hole_cards, community_cards, self.all_holes)
-        print("win rate\n\n", win_r, "\n\n")
+        #print("win rate\n\n", win_r, "\n\n")
         action = "call"
         info = valid_actions[1]
         amount = info["amount"]
@@ -141,7 +141,7 @@ class MyPlayer(BasePokerPlayer):
             rat = act_list[2]
             action = 2
         action = self.ACTION_MAP_INT[action]
-        print("fuck action strat\n\n", action, "\n\n")
+        #print("fuck action strat\n\n", action, "\n\n")
         if action == "raise":
             constant = min(act_list[2] * 10 - 1, 5)
             amount = (
@@ -168,7 +168,7 @@ class MyPlayer(BasePokerPlayer):
             # action, amount = self.naive_decider(
             # valid_actions, hole_card, round_state["community_card"]
             # )
-        print("fuck action\n\n", action, "  ", amount, "\n\n")
+        #print("fuck action\n\n", action, "  ", amount, "\n\n")
         self.totalcost += amount
         return action, amount
 
