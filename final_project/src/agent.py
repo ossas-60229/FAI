@@ -17,6 +17,7 @@ class MyPlayer(BasePokerPlayer):
         self.ante = 50
         self.totalcost = 0
         self.sig_digits = 100
+        self.max_round = 0
         self.pos = 0
         self.path = "./src/train0_strat.json"
         self.strategy = None
@@ -76,11 +77,11 @@ class MyPlayer(BasePokerPlayer):
         action = "call"
         info = valid_actions[1]
         amount = info["amount"]
-        #print("fuck win rate\n\n", win_r, "\n\n")
+        # print("fuck win rate\n\n", win_r, "\n\n")
         [fold_exp, call_exp, raise_exp] = self.eval_action(
             valid_actions, win_r, self.round_state
         )
-        #print("fuck exp\n\n", fold_exp, call_exp, raise_exp, "\n\n")
+        # print("fuck exp\n\n", fold_exp, call_exp, raise_exp, "\n\n")
         if call_exp > 0:
             opt = (self.pos + 1) / self.n_player
             if raise_exp > call_exp and opt < 0.6:
@@ -124,14 +125,14 @@ class MyPlayer(BasePokerPlayer):
     def strategy_decider(self, valid_actions, hole_cards, round_state):
         community_cards = round_state["community_card"]
         win_r = self.win_rate(hole_cards, community_cards, self.all_holes)
-        #print("win rate\n\n", win_r, "\n\n")
+        # print("win rate\n\n", win_r, "\n\n")
         action = "call"
         info = valid_actions[1]
         amount = info["amount"]
         key = self.encode_condition(win_r, round_state, valid_actions)
-        #print("fuck key\n\n", key, "\n\n")
+        # print("fuck key\n\n", key, "\n\n")
         act_list = list(self.strategy[key])
-        #print("fuck actlist\n\n", act_list[1], "\n\n")
+        # print("fuck actlist\n\n", act_list[1], "\n\n")
         action = 0
         rat = act_list[0]
         if rat < act_list[1]:
@@ -141,15 +142,21 @@ class MyPlayer(BasePokerPlayer):
             rat = act_list[2]
             action = 2
         action = self.ACTION_MAP_INT[action]
-        #print("fuck action strat\n\n", action, "\n\n")
+        # print("fuck action strat\n\n", action, "\n\n")
         if action == "raise":
-            constant = min(act_list[2] * 10 - 1, 5)
-            amount = (
-                valid_actions[2]["amount"]["min"] * (1 + win_r)*constant + 1
-            )
+            constant = min(act_list[2] * 10 - 1, 8)
+            amount = (valid_actions[2]["amount"]["min"] + 10) * (
+                1 + win_r
+            ) * constant + 1
             amount = min(amount, valid_actions[2]["amount"]["max"])
-            if self.stack - amount <= 100:
-                amount = max(self.stack - 100, valid_actions[2]["amount"]["min"])
+            if (
+                self.stack - amount <= 1000 - (self.max_round - self.n_round) * 15 / 2
+                and self.stack > 1000
+            ):
+                amount = max(amount * 0.5, valid_actions[2]["amount"]["min"] * 2 + 1)
+            if self.pos + 1 == self.n_player:
+                amount = info["amount"]
+                action = "call"
         elif action == "call":
             amount = info["amount"]
         elif action == "fold":
@@ -162,22 +169,34 @@ class MyPlayer(BasePokerPlayer):
         action = "call"
         amount = valid_actions[1]["amount"]
         if round_state["street"] == "preflop":
+            if (
+                self.stack - (15 * (self.max_round - self.n_round)) / 2 - 5 > 1000
+                and self.n_player == 2
+            ):
+                action = "fold"
+                amount = 0
             pass
         else:
             action, amount = self.strategy_decider(
                 valid_actions, hole_card, round_state
             )
+
             # action, amount = self.naive_decider(
             # valid_actions, hole_card, round_state["community_card"]
             # )
-        #print("fuck action\n\n", action, "  ", amount, "\n\n")
+        # print("fuck action\n\n", action, "  ", amount, "\n\n")
         self.totalcost += amount
         return action, amount
 
     def receive_game_start_message(self, game_info):
+        # print("fuck game_info\n\n", game_info, "\n\n")
+        self.max_round = game_info["rule"]["max_round"]
+        self.small_blind = game_info["rule"]["small_blind_amount"]
+        self.n_round = 0
         pass
 
     def receive_round_start_message(self, round_count, hole_card, seats):
+        self.n_round += 1
         self.totalcost = 0
         self.n_player = len(seats)
         pass

@@ -74,16 +74,7 @@ for i in range(4):
             key = "%d_%d_%d" % (i, j, k)
             # (turn, rate, position)
             # i-th turn and win rate j*0.001
-            if j > digit*0.9:
-                if k == 1:
-                    strat_map[key] = (0.85,0.1,0.05)
-                else:
-                    strat_map[key] = (0,1,0)
-                # ratio of min raise
-            elif j >= digit*0.4:
-                strat_map[key] = (0.15,0.8,0.05)
-            else:
-                strat_map[key] = (0.05,0.05,0.9)
+            strat_map[key] = (1/3, 1/3, 1/3)
     #(action, default)
 #(turn, win rate, position(fore or back), ratio of call bet and whole pot)
 param["digit"] = digit

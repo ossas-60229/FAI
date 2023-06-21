@@ -16,6 +16,7 @@ class CFR:
         self.path = "./strat/train0_strat.json"
         self.sig_digits = 100
         self.ante = 1
+        self.street = 3
         self.strat = dict()
         self.all_holes = get_all_combinations(self.all_cards,2)
 
@@ -62,7 +63,6 @@ class CFR:
         self.small_blind = sb
         self.big_blind = sb * 2
         util = 0
-        self.street = 1
         interval = 100
         step = 0
         for i in range(iterations):
@@ -348,7 +348,9 @@ strat_root = "./strat/"
 start_path = "train0_strat.json"
 my_cfr = CFR()
 my_cfr.load_strat(strat_root + start_path)
-util = my_cfr.train(50000, 1, 0)
+for i in range(1,4):
+    my_cfr.street = i
+    util = my_cfr.train(50000, 1, 0)
 strategy = my_cfr.get_whole_strategy()
 
 
