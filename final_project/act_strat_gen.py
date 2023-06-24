@@ -70,7 +70,7 @@ digit = 100
 param = dict()
 for i in range(4):
     for j in range(digit):
-        for k in range(2):
+        for k in range(1):
             key = "%d_%d_%d" % (i, j, k)
             # (turn, rate, position)
             # i-th turn and win rate j*0.001

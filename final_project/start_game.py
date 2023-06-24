@@ -12,7 +12,7 @@ from baseline3 import setup_ai as baseline3_ai
 from baseline4 import setup_ai as baseline4_ai
 for i in range(1):
     config = setup_config(max_round=20, initial_stack=1000, small_blind_amount=5)
-    config.register_player(name="p1", algorithm=baseline1_ai())
+    config.register_player(name="p1", algorithm=baseline3_ai())
     config.register_player(name="p2", algorithm=my_ai())
 
     ## Play in interactive mode if uncomment

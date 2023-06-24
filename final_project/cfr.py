@@ -141,7 +141,7 @@ class CFR:
                 for act in history:
                     if act[0] == Game.RAISE:
                         fuck += act[1]
-                return -fuck
+                return -(fuck + self.ante)
             elif history[-1][0] == Game.CALL or history[-1][0] == Game.RAISE:
                 if len(history) == 1:
                     # determine the winner
